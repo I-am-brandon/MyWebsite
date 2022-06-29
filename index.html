@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  <link rel= "stylesheet" href="styles.css">
+  <title>Brandon Penilla</title>
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    <h3> 
+       <a class = "link" href="/"> BP </a>
+    </h3>
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#CourseWork">Coursework</a>
+        </li>
+
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i id="btn-theme" class="fas fa-moon"></i>
+      </button>
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="about center">
+      <h1 > Hi, I'm <span class = "about__name">Brandon</span> </h1>
+      <h2 class = "about__role" > Student at UC Berkeley - College of Engineering </h2>
+      <p class = "about_desc"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Brandon is a Junior at UC Berkeley major in Electrical Engineering and Computer Science and minoring in Data Science with a passion for the intersection between space and technology as well as building equitable spaces in engineering. With experience in data structures and algorithms, computer architecture, circuit design and analysis, as well as cryptography and computer security. </p>
+      <div class="about__contact center">
+        <a href="Resume - Brandon_Penilla (4) copy.pdf">
+          <span class="btn btn--outline"> Resume </span>
+        </a>
+        <a href="https://github.com/I-am-brandon" aria-label="github" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/brandonpenilla/" aria-label="linkedin" class="link link--icon">
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__grid">
+        <div class="project">
+          <h3>Gitlet - Java</h3>
+          <p class="project__description">
+            ● Built version-control system that utilizes SHA1 hashing system and serialization to maintain persistence of files within the program, with the ability to commit file changes, revert to previous versions, and create branches.
+          </p>
+          <p class="project__description">
+            ● Implemented through the use of the breadth-first search algorithm, sets, maps, deques, and other data structures.
+          </p>
+          <ul class="project__stack"> 
+            <li class="project__stack-item"><b>Language:</b> Java </li>
+            <li class="project__stack-item"></li>
+            <li class="project__stack-item"></li>
+          </ul>
+
+          <a href="https://github.com/I-am-brandon/Gitlet" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>MiniNumpy - C</h3>
+          <p class="project__description">
+            ● Developed a library for performing mathematical operations on matrices and arrays with specific attention to memory allocation using SIMD instructions and OpenMP for parallelization in order to achieve maximum speed and efficiency.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item"><b>Language:</b> Java </li>
+            <li class="project__stack-item"></li>
+            <li class="project__stack-item"></li>
+          </ul>
+
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Enigma Encryption Machine - Java</h3>
+          <p class="project__description">
+            ● Translated an analog Enigma machine into code that functions like its original used in WW2 to encrypt input. Accomplished
+primarily using scanners, Hashmaps, String Manipulation(Regex), and ArrayLists.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item"><b>Language:</b> Java </li>
+            <li class="project__stack-item"></li>
+            <li class="project__stack-item"></li>
+          </ul>
+
+          <a href="https://github.com/I-am-brandon/Enigma-Machine" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Jump Game with AI Opponent - Java</h3>
+          <p class="project__description">
+            ● Built classic jump game with support for human players as well as AI that finds the optimal move to make with adjustable difficulty.
+            <br><br> ● Achieved by recursively using the MiniMax algorithm which incorporated the use of Alpha-Beta Pruning as well as through the use
+of Stacks, 2D Arrays, and ArrayDeques.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item"><b>Language:</b> Java</li>
+            <li class="project__stack-item"></li>
+            <li class="project__stack-item"></li>
+          </ul>
+
+          <a href="https://github.com/I-am-brandon/JumpGame" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section releventCourseWork" id="CourseWork">
+      <h2 class="section__title">Technical Coursework</h2>
+      <ul class="courses__list">
+        <li class="courses__list-item btn btn--plain"> <b> CS61A: Structure and Interpretation of Computer Programs </b><br> ● Focus on abstraction techniques to manage complexity such as functional programming, data abstracton, and object oriented-programming  </li>
+        <li class="courses__list-item btn btn--plain"> <b> CS61B: Data Structures </b> <br> ● Focus on Fundamental dynamic data structures, linear lists, queues, trees, and other linked structures; arrays strings, and hash tables. <br> ● Algorithms for sorting and searching. </li> 
+        <li class="courses__list-item btn btn--plain"> <b> CS61C: Great Ideas in Computer Architecture (Machine Structures) </b> <br> ● The internal organization of and operation of digital computers, Machine Architecture, Operating systems </li>
+        <li class="courses__list-item btn btn--plain"> <b> CS70: Discrete Mathematics and Probability Theory </b> <br> ● Logic, infinity, and induction. Modular arithmetic and cryptography.<br> ● Polynomials, correcting codes and interpolation. <br> ● Probability including sample spaces, independence, random variables, law of large numbers. </li>
+        <li class="courses__list-item btn btn--plain"> <b> CS161: Computer Security </b> <br> ● Cryptography, including encryption, authentication, hash functions, cryptographic protocols, and applications. <br> ● Operating system security, access control and software security, defensive programming, and language-based security. </li>
+        <li class="courses__list-item btn btn--plain"> <b> CS170: Efficient Algorithms and Intractable Problems </b> <br> ●  Concept and basic techniques in the design and analysis of algorithms. <br> ●  Algorithms for optimum search trees, balanced trees and UNION-FIND algorithms. <br> ●  Numerical and algebraic algorithms; combinatorial algorithms.  <br> ● Unsolvable and intractable problems. </li>
+        <li class="courses__list-item btn btn--plain"> <b> EECS16A: Designing Information Devices and Systems I </b> <br> ● Vectors and matrices, eigenvalues and eigenvectors, <br> ● Design and circuit analysis, <br> ● Intro to machine learning </li>
+        <li class="courses__list-item btn btn--plain"> <b> EECS16B: Designing Information Devices and Systems II </b> <br> ● Introduction to machine learning, circuit design, control, and signal processing. <br> ●  Linear-algebraic concepts motivated by application contexts.</li>
+      </ul>
+
+    <section class="section skills" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain"> <b>Programming Languages:</b> <br> Java, &nbsp;&nbsp; Python, &nbsp;&nbsp; C, &nbsp;&nbsp; SQL, &nbsp;&nbsp; RISCV, &nbsp;&nbsp; Go, &nbsp;&nbsp; Scheme </li> 
+        <li class="skills__list-item btn btn--plain"> <b> Tools </b> <br> Git,&nbsp;&nbsp; Adobe Photoshop,&nbsp;&nbsp; Adobe AfterEffects,&nbsp;&nbsp; Adobe Illustrator, &nbsp;&nbsp;IntelliJ, &nbsp;&nbsp;Github   </li>
+      </ul>
+    </section>
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:brandon.pen@berkeley.edu">
+        <span class="btn btn--outline">Email me</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="/" class="link footer__link">
+      Created By Brandon Penilla
+    </a>
+  </footer>
+
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
